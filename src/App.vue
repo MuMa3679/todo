@@ -1,7 +1,7 @@
 <template>
   <div>
     <amplify-authenticator>
-      <Todo />
+      <router-view/>
       <div class="row justify-content-evenly">
         <div class="col-4">
           <amplify-sign-out></amplify-sign-out>
@@ -13,13 +13,7 @@
 </template>
 
 <script>
-import Auth from 'aws-amplify'
-import Todo from './components/Todo.vue'
-
 export default {
   name: 'App',
-  components: {
-    Todo
-  },
 }
 </script>
